@@ -1,6 +1,5 @@
 import React from "react";
 import store from "./store.js";
-import AddToCart from "./AddToCart";
 import { Link } from "react-router-dom";
 import HeaderNav from "./HeaderNav";
 import ScrollToTop from "./ScrollToTop";
@@ -25,9 +24,7 @@ class ItemPage extends React.Component {
   };
 
   render() {
-    const { bigURL } = this.state;
     const { items } = store;
-    const URLClicked = `/img/${bigURL}`;
     const item = items.find((p) => p.id === this.props.match.params.itemId);
     return (
       <div className="item-info">
@@ -37,21 +34,25 @@ class ItemPage extends React.Component {
           <img
             className="c-item"
             src={item.url}
+            alt="img 1"
             onClick={this.handleClick}
           ></img>
           <img
             className="c-item"
             src={item.url1}
+            alt="img 2"
             onClick={this.handleClick}
           ></img>
           <img
             className="c-item"
             src={item.url2}
+            alt="img 3"
             onClick={this.handleClick}
           ></img>
           <img
             className="c-item"
             src={item.url3}
+            alt="img 4"
             onClick={this.handleClick}
           ></img>
         </div>

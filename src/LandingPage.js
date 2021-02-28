@@ -5,7 +5,7 @@ export default class LandingPage extends Component {
   render() {
     return (
       <div className="openingimg">
-        <img className="car-top open" src={glassesModel}></img>
+        <img className="car-top open" alt="model wearing glasses" src={glassesModel}></img>
       </div>
     );
   }

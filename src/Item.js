@@ -5,7 +5,7 @@ export default class Item extends React.Component {
     const x = window.matchMedia("(max-width:900px)");
     return (
       <div className="listing">
-        <img className="item" src={this.props.url} />
+        <img className="item" alt="img of glasses" src={this.props.url} />
         <p className="item-name">
           {!x.matches
             ? this.props.name

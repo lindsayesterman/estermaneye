@@ -3,9 +3,8 @@ import NavList from "./NavList.js";
 import ItemList from "./ItemList.js";
 import store from "./store.js";
 import { Route } from "react-router-dom";
-import { Link } from "react-router-dom";
 import ItemPage from "./ItemPage.js";
-import { getItemsForNav, findItem, findNav } from "./Item-helpers";
+import { getItemsForNav } from "./Item-helpers";
 import LandingPage from "./LandingPage.js";
 import AddToCart from "./AddToCart";
 import HeaderNav from "./HeaderNav";
@@ -27,15 +26,15 @@ class ItemApp extends Component {
 
   render() {
     const { items, navs } = this.state;
-    const context = {
-      items: this.state.items,
-      items: this.state.item,
-      addItemToCart: (item) => {
-        this.setState({
-          item,
-        });
-      },
-    };
+    // const context = {
+    //   items: this.state.items,
+    //   items: this.state.item,
+    //   addItemToCart: (item) => {
+    //     this.setState({
+    //       item,
+    //     });
+    //   },
+    // };
     return (
       <div>
         {["/", "/nav/:navName"].map((path) => (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import store from "./store.js";
 import "./App.css";
 import HeaderNav from "./HeaderNav";
@@ -24,7 +24,7 @@ class AddToCart extends React.Component {
         <div className="cart-item">
           <h2>{item.name}</h2>
           <Link to={`/item/${item.id}`}>
-            <img src={item.url}></img>
+            <img alt="item in cart" src={item.url}></img>
           </Link>
           <p>{item.description}</p>
           <p>${item.price} </p>
@@ -38,6 +38,7 @@ class AddToCart extends React.Component {
           </h4>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.paypal.com/paypalme/lindsayscloset"
           >
             Pay here

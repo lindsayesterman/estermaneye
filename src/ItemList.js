@@ -1,7 +1,6 @@
 import React from "react";
 import Item from "./Item.js";
 import { Link } from "react-router-dom";
-import { countItemsForNav } from "./Item-helpers";
 
 class ItemList extends React.Component {
   static defaultProps = {
