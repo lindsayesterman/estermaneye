@@ -23,17 +23,17 @@ class ItemApp extends Component {
     };
   }
 
-  handleSearch = (e) => {
-    e.preventDefault();
-    const { searched, sortedResults } = this.props;
-    let test = getItemsForSearch(this.props.items, searched);
-    this.setState({ sortedResults: test });
-    console.log(sortedResults);
-    console.log(searched);
-  };
-
   updateSearchHandle = (e) => {
     this.setState({ searched: e.target.value });
+  };
+
+  handleSearch = (e) => {
+    e.preventDefault();
+    const { searched } = this.state;
+    let sortedResults = getItemsForSearch(this.state.items, searched);
+    this.setState({ sortedResults });
+    console.log(sortedResults);
+    console.log(searched);
   };
 
   setItems = (items) => {
@@ -44,7 +44,11 @@ class ItemApp extends Component {
   };
 
   render() {
-    const { items, navs } = this.state;
+    const { navs } = this.state;
+    const items =
+      this.state.items && this.state.sortedResults.length
+        ? this.state.sortedResults
+        : this.state.items;
     return (
       <div>
         {["/", "/nav/:navName"].map((path) => (
@@ -57,13 +61,24 @@ class ItemApp extends Component {
               const ItemsForNav = getItemsForNav(items, navName);
               return (
                 <>
-                  <HeaderNav
-                    handleSearch={this.handleSearch}
-                    updateSearchHandle={this.updateSearchHandle}
-                  />
+                  <HeaderNav />
+                  <form
+                    className="searchBar"
+                    onSubmit={(e) => this.handleSearch(e)}
+                  >
+                    <input
+                      type="text"
+                      id="searched"
+                      onChange={(e) => this.updateSearchHandle(e)}
+                    />
+                    <button className="fa fa-search"></button>
+                  </form>
                   <NavList {...routeProps} navs={navs} />
                   <LandingPage />
-                  <ItemList {...routeProps} items={ItemsForNav} />
+                  <ItemList
+                    {...routeProps}
+                    items={ItemsForNav || this.state.sortedResults}
+                  />
                 </>
               );
             }}
