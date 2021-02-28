@@ -61,7 +61,7 @@ export default {
     {
       name: "Becky IV Premium Scratch Resistant Polymer",
       category: "Polarized",
-      id: "5",
+      id: "6",
       price: "109",
       size: "Oversized 62 - 13 - 145",
       brand: "DIFF",
@@ -72,7 +72,7 @@ export default {
     {
       name: "Bella Premium Scratch Resistant Polymer",
       category: "Polarized",
-      id: "6",
+      id: "7",
       price: "109",
       size: "Oversized 54 - 19 - 142",
       brand: "DIFF",
@@ -84,7 +84,7 @@ export default {
     {
       name: "Lenox Premium Scratch Resistant Polymer",
       category: "Polarized",
-      id: "7",
+      id: "8",
       price: "109",
       size: "Oversized 62 - 13 - 145",
       brand: "DIFF",
@@ -96,7 +96,7 @@ export default {
     {
       name: "Multi Premium Scratch Resistant Polymer",
       category: "Sunglasses",
-      id: "8",
+      id: "9",
       price: "109",
       size: "Oversized 62 - 13 - 145",
       brand: "DIFF",
@@ -108,7 +108,7 @@ export default {
     {
       name: "Becky Premium Scratch Resistant Polymer",
       category: "Progressive",
-      id: "9",
+      id: "10",
       price: "109",
       size: "Oversized 62 - 13 - 145",
       brand: "DIFF",
@@ -119,7 +119,7 @@ export default {
     {
       name: "Becky IV Premium Scratch Resistant Polymer",
       category: "Blue Light",
-      id: "10",
+      id: "11",
       price: "109",
       size: "Oversized 62 - 13 - 145",
       brand: "DIFF",
@@ -130,7 +130,7 @@ export default {
     {
       name: "Becky IV Premium Scratch Resistant Polymer",
       category: "Polarized",
-      id: "11",
+      id: "12",
       price: "109",
       size: "Oversized 62 - 13 - 145",
       brand: "DIFF",
