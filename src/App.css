@@ -1,0 +1,330 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+#nav-bar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 26%;
+}
+
+.nav {
+  font-size: 16px;
+  margin: 13px;
+  cursor: pointer;
+  list-style: none;
+  color: black;
+  text-decoration: underline;
+}
+
+.nav:hover {
+  text-decoration: underline;
+}
+
+ul {
+  display: flex;
+  margin: 0 -10px;
+  list-style: none;
+}
+
+li {
+  margin: 0 25px;
+}
+
+.tabs {
+  padding: 20px;
+}
+
+.lindsay h1 {
+  font-size: 30px;
+  color: black;
+  padding: 1% 0px 0px 5%;
+  /* padding: 3% 3% 3% 7%; */
+}
+
+.car-top {
+  width: 100%;
+  padding: 20px 0px 100px 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 13%;
+}
+
+.item {
+  height: 340px;
+  width: 330px;
+  margin: 30px;
+  border-bottom: 80px solid transparent;
+  border-radius: 2px;
+}
+
+.item:hover {
+  -webkit-filter: brightness(60%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.listing {
+  position: relative;
+}
+
+.item-name {
+  position: absolute;
+  top: 76%;
+  left: 11%;
+  color: black;
+  font-size: 15px;
+}
+
+.price {
+  position: absolute;
+  top: 83%;
+  left: 14.5%;
+  color: black;
+  font-size: 14px;
+  transform: translate(-50%, -50%);
+}
+
+.c-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 50px;
+}
+
+.c-item {
+  width: 100%;
+  margin: 20px 0;
+  left: 0px;
+}
+
+div.cart-item {
+  background-color: white;
+  margin: 20px;
+  width: 40%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  height: 100%;
+  float: left;
+}
+
+div.cart-item img {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.cart-page h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.cart-page input,
+.cart-page button {
+  width: 37%;
+  margin: 20px 0;
+  height: 20px;
+  border-radius: 4px;
+  padding: 15px;
+  border: 1px solid #d1d5da;
+  font-size: 10px;
+}
+
+.cart-page button {
+  padding-bottom: 25px;
+}
+
+.cart-page button:hover {
+  transform: scale(1.01);
+}
+
+.checkout-cart {
+  width: 90%;
+  margin-top: 80px;
+}
+
+.checkout-cart a {
+  color: blue;
+}
+
+.piece {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 751px) and (max-width: 1000px) {
+  .item {
+    height: 300px;
+    width: 270px;
+  }
+
+  .car-top {
+    height:350px;
+  }
+
+  #nav-bar{
+    top:18%;
+  }
+}
+
+@media only screen and (min-width: 449px) and (max-width: 750px) {
+  button {
+    font-size: 8px;
+  }
+
+  .item {
+    height: 250px;
+    width: 250px;
+  }
+
+  .item-name {
+    top: 80%;
+  }
+
+  .price {
+    top: 88%;
+    left: 16%;
+  }
+
+  .nav {
+    font-size: 12px;
+  }
+
+  .car-top {
+    height:300px;
+  }
+
+  #nav-bar{
+    top:18%;
+  }
+
+  .tabs {
+    font-size: 13px;
+    padding: 17px;
+  }
+
+  .lindsay {
+    font-size: 13px;
+    margin-left: 4%;
+  }
+
+  .cart-page button {
+    position: absolute;
+    left: 57%;
+    top: 102%;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  #nav-bar {
+    position: static;
+    flex-direction: row;
+    width:90%;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+  .lindsay h1 {
+    padding-bottom:30px;
+  }
+  .nav {
+    line-height: 0.1;
+    font-size: 13px;
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  .item {
+    margin: 5px;
+    width: 160px;
+    height: 180px;
+  }
+
+  .item-name,
+  .price {
+    font-size: 11px;
+  }
+
+  .item-name {
+    top: 67%;
+    left: 9%;
+  }
+
+  .price {
+    top: 75%;
+  }
+
+  .tabs {
+    font-size: 10px;
+    padding: 1px;
+  }
+
+  .lindsay h1 {
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 30px;
+  }
+
+  .flex-container {
+    margin-left: 0%;
+  }
+
+  .c-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .c-item {
+    width: 98%;
+  }
+
+  .info {
+    padding: 10px;
+  }
+
+  .cart-page input,
+  .cart-page button {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+  }
+
+  div.cart-item {
+    width: 80%;
+  }
+
+  .checkout-cart {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .item {
+    width: 140px;
+    height: 160px;
+  }
+}
+
+@media (min-width: 449px) {
+  .info {
+    width: 35%;
+    position: absolute;
+    top: 44%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    line-height: 1.6;
+  }
+}
