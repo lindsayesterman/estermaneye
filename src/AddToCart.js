@@ -10,17 +10,17 @@ class AddToCart extends React.Component {
     const { items } = store;
     const item = items.find((p) => p.id === this.props.match.params.itemId);
     const cartItems = item;
+    const tax = (item.price * 0.07).toFixed(2);
     console.log(cartItems);
     const realPrice = (
       parseFloat(item.price) +
-      parseFloat(item.price) * 0.06 +
+      parseFloat(item.price) * 0.07 +
       4.99
     ).toFixed(2);
     return (
       <div className="cart-page">
         <ScrollToTop />
         <HeaderNav />
-        <h2>You are in the cart</h2>
         <div className="cart-item">
           <h2>{item.name}</h2>
           <Link to={`/item/${item.id}`}>
@@ -32,17 +32,20 @@ class AddToCart extends React.Component {
         <div className="checkout-cart">
           <h3>Checkout</h3>
           <h4>Shipping is $4.99</h4>
-          <h4>
-            Please send ${realPrice} to the paypal link below. This accounts for
-            shipping and tax. I will notify you when I shipped your order:
-          </h4>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.paypal.com/paypalme/lindsayscloset"
-          >
-            Pay here
-          </a>
+          <h4>Sales tax is ${tax}</h4>
+          <h3>
+            Your total price is ${realPrice}, please send ${realPrice} to the
+            paypal link below.
+          </h3>
+          <div className="paypal">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.paypal.com/paypalme/lindsayscloset"
+            >
+              Pay here with Paypal
+            </a>
+          </div>
         </div>
         <form
           className="c-form"

@@ -8,13 +8,32 @@ import { getItemsForNav } from "./Item-helpers";
 import LandingPage from "./LandingPage.js";
 import AddToCart from "./AddToCart";
 import HeaderNav from "./HeaderNav";
+import { getItemsForSearch } from "./Item-helpers.js";
 
 const { navs, items } = store;
 
 class ItemApp extends Component {
-  state = {
-    items,
-    navs,
+  constructor(props) {
+    super(props);
+    this.state = {
+      items,
+      navs,
+      searched: "",
+      sortedResults: [],
+    };
+  }
+
+  handleSearch = (e) => {
+    e.preventDefault();
+    const { searched, sortedResults } = this.props;
+    let test = getItemsForSearch(this.props.items, searched);
+    this.setState({ sortedResults: test });
+    console.log(sortedResults);
+    console.log(searched);
+  };
+
+  updateSearchHandle = (e) => {
+    this.setState({ searched: e.target.value });
   };
 
   setItems = (items) => {
@@ -26,15 +45,6 @@ class ItemApp extends Component {
 
   render() {
     const { items, navs } = this.state;
-    // const context = {
-    //   items: this.state.items,
-    //   items: this.state.item,
-    //   addItemToCart: (item) => {
-    //     this.setState({
-    //       item,
-    //     });
-    //   },
-    // };
     return (
       <div>
         {["/", "/nav/:navName"].map((path) => (
@@ -47,7 +57,10 @@ class ItemApp extends Component {
               const ItemsForNav = getItemsForNav(items, navName);
               return (
                 <>
-                  <HeaderNav />
+                  <HeaderNav
+                    handleSearch={this.handleSearch}
+                    updateSearchHandle={this.updateSearchHandle}
+                  />
                   <NavList {...routeProps} navs={navs} />
                   <LandingPage />
                   <ItemList {...routeProps} items={ItemsForNav} />
@@ -63,7 +76,7 @@ class ItemApp extends Component {
           }}
         />
         <Route
-          path="/AddToCart/:itemId"
+          path="/cart/:itemId"
           render={(routeProps) => {
             return <AddToCart item={this.state.item} {...routeProps} />;
           }}

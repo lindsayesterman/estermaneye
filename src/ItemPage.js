@@ -60,7 +60,7 @@ class ItemPage extends React.Component {
           <h2>{item.name}</h2>
           <div className="piece">
             <span className="label">Price</span>
-            <span className="actual">{item.price}</span>
+            <span className="actual">${item.price}</span>
           </div>
           <hr />
           <div className="piece">
@@ -75,13 +75,13 @@ class ItemPage extends React.Component {
           <hr />
           <b>Description</b> <br /> {item.description}
           <hr></hr>
-          <Link to={`/AddToCart/${item.id}`}>
+          <Link to={`/cart/${item.id}`}>
             <button
               className="add-to-cart"
               key={this.props.id}
               onClick={this.handleAddToCart}
             >
-              Add to Cart
+              Buy Now
             </button>
           </Link>
         </div>
