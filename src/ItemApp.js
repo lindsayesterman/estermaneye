@@ -73,12 +73,14 @@ class ItemApp extends Component {
                     />
                     <button className="fa fa-search"></button>
                   </form>
-                  <NavList {...routeProps} navs={navs} />
+                    <NavList {...routeProps} navs={navs} />
                   <LandingPage />
+                  <div id="item-list">
                   <ItemList
                     {...routeProps}
                     items={ItemsForNav || this.state.sortedResults}
                   />
+                  </div>
                 </>
               );
             }}
