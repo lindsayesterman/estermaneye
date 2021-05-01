@@ -31,7 +31,7 @@ export default {
       name: "Prada black and gold sunglasses",
       category: "Sunglasses",
       id: "3",
-      price: "109",
+      price: "325",
       size: "Oversized 62 - 13 - 145",
       brand: "DIFF",
       url: "/img/pradaBlk.png",
@@ -41,10 +41,27 @@ export default {
       description:
         "Prada black and gold sunglasses with gold trim on top. Super fashionable and fun shape.",
     },
+    {
+      name: "Prada semi rimless glasses",
+      category: "Glasses",
+      id: "4",
+      price: "215",
+      size: "53-19",
+      brand: "Prada",
+      url: "/img/semiRimlessPrada.png",
+      url1: "/img/semiRimlessPrada1.png",
+      url2: "/img/semiRimlessPrada2.png",
+      url3: "/img/semiRimlessPrada3.png",
+      description:
+        "Prada semi rimless frames. The top of the frame is a silver tone color and the temples are a brown tortoise color. Brand new",
+    },
   ],
   navs: [
     {
       name: "Sunglasses",
+    },
+    {
+      name: "Glasses",
     },
     {
       name: "Polarized",
