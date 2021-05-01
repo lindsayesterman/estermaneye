@@ -5,7 +5,7 @@ export default class HeaderNav extends React.Component {
 
   render() {
     return (
-      <div className="lindsay">
+      <div className="estermaneye">
         <Link to={"/"} style={{ textDecoration: "none", color: "black" }}>
           <h1> ESTERMAN EYE OPTICAL</h1>
         </Link>

@@ -38,7 +38,7 @@ li {
   padding: 20px;
 }
 
-.lindsay h1 {
+.estermaneye h1 {
   font-size: 30px;
   color: black;
   padding: 1% 0px 0px 5%;
@@ -293,7 +293,7 @@ div.cart-item img {
     padding: 17px;
   }
 
-  .lindsay {
+  .estermaneye {
     font-size: 13px;
     margin-left: 4%;
   }
@@ -307,11 +307,14 @@ div.cart-item img {
     flex-wrap: wrap;
     padding: 5px;
   }
-  .lindsay h1 {
+
+  .estermaneye h1 {
     padding-bottom: 30px;
   }
+
   .nav {
-    line-height: 0.1;
+    padding-top:0px;
+    line-height: 0.01;
     font-size: 13px;
     font-style: italic;
     text-decoration: underline;
@@ -342,7 +345,7 @@ div.cart-item img {
     padding: 1px;
   }
 
-  .lindsay h1 {
+  .estermaneye h1 {
     margin: 0 auto;
     padding-top: 30px;
     font-size: 30px;
@@ -379,6 +382,13 @@ div.cart-item img {
   .checkout-cart {
     padding: 20px;
   }
+
+  form.searchBar {
+    /* top: 18%;
+    left: 10%; */
+    display:none;
+  }
+
 }
 
 @media screen and (max-width: 320px) {
