@@ -49,12 +49,12 @@ class ItemPage extends React.Component {
             alt="img 3"
             onClick={this.handleClick}
           ></img>
-          <img
+          {item.url3 != null ? <img
             className="c-item"
             src={item.url3}
             alt="img 4"
             onClick={this.handleClick}
-          ></img>
+          ></img> : console.log("no img")}
         </div>
         <div className="info">
           <h2>{item.name}</h2>

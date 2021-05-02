@@ -55,6 +55,62 @@ export default {
       description:
         "Prada semi rimless frames. The top of the frame is a silver tone color and the temples are a brown tortoise color. Brand new",
     },
+    {
+      name: "Kate Spade blue & gold glasses",
+      category: "Glasses",
+      id: "5",
+      price: "165",
+      size: "One size",
+      brand: "Kate Spade",
+      url: "/img/kateSpadeBlue.png",
+      url1: "/img/kateSpadeBlue1.png",
+      url2: "/img/kateSpadeBlue2.png",
+      url3: "/img/kateSpadeBlue3.png",
+      description:
+        "Kate Spade dark blue plastic glasses with gold temples. Big lens size and will easily fit a progressive. New style, fun and fabulous.",
+    },
+    {
+      name: "Dior Pink/red Sunglasses",
+      category: "Sunglasses",
+      id: "6",
+      price: "275",
+      size: "53-19",
+      brand: "Dior",
+      url: "/img/pinkDior.png",
+      url1: "/img/pinkDior1.png",
+      url2: "/img/pinkDior2.png",
+      description:
+        "Fun and great fitting Dior sunglasses. Perfect for everyday and fit beautifully. Reddish front frame and dark blue temples",
+    },
+    {
+      name: "Prada dark brown tortoise frames",
+      category: "Glasses",
+      id: "7",
+      price: "225",
+      size: "55-16",
+      brand: "Prada",
+      url: "/img/grayMattePrada.png",
+      url1: "/img/grayMattePrada1.png",
+      url2: "/img/grayMattePrada2.png",
+      url3: "/img/grayMattePrada3.png",
+      description:
+        "PRADA New with tag brown tortoise frames. Not shiny, but Brushed like front. Great rectangle style & shape - size 55-16. Temples say Prada on them and super cool",
+    },
+    {
+      name: "Emporio Armani brown tortoise sunglasses",
+      category: "Sunlasses",
+      id: "8",
+      price: "165",
+      size: "One size",
+      brand: "Emporio Armani",
+      url: "/img/brownEmpirio.png",
+      url1: "/img/brownEmpirio1.png",
+      url2: "/img/brownEmpirio2.png",
+      url3: "/img/brownEmpirio3.png",
+      description:
+        "Emporia brown tortoise round sunglasses with lots of protection. The temples are a brushed gold and brown as picture indicates. Front is large and roundish. High fashion",
+    },
+
   ],
   navs: [
     {
