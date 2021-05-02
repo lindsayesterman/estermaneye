@@ -62,15 +62,6 @@ export default {
     },
     {
       name: "Glasses",
-    },
-    {
-      name: "Polarized",
-    },
-    {
-      name: "Progressive",
-    },
-    {
-      name: "Blue-Light",
-    },
+    }
   ],
 };
