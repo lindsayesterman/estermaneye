@@ -114,7 +114,6 @@ form.searchBar:hover .fa {
 
 button:focus { outline: none; }
 
-
 .car-top {
   margin-left: 16%;
   width: 33%;
@@ -158,7 +157,7 @@ button:focus { outline: none; }
   width: 330px;
   margin: 30px;
   border-bottom: 80px solid transparent;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .item:hover {

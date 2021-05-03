@@ -43,6 +43,7 @@ class AddToCart extends React.Component {
             >
               Pay here with Paypal
             </a>
+            <h4 style={{color:"brown", marginBottom:"0px"}}>Then fill out this form and submit:</h4>
           </div>
         </div>
         <form
