@@ -43,7 +43,13 @@ li {
   color: black;
   padding: 1% 0px 0px 5%;
   display: inline-block;
+  font-weight:300;
   /* padding: 3% 3% 3% 7%; */
+}
+
+.estermaneye h1:hover {
+  /* text-decoration: underline; */
+  transform:scale(1.03)
 }
 
 form.searchBar {
@@ -209,8 +215,9 @@ div.cart-item img {
   font-size: 10px;
 }
 
-.cart-page button {
-  padding-bottom: 25px;
+.cart-page input:focus,
+.cart-page button:focus {
+  outline:0;
 }
 
 .cart-page button:hover {
@@ -231,16 +238,32 @@ div.cart-item img {
   justify-content: space-between;
 }
 
-.paypal a {
+.paypal a, .add-to-cart{
   color: white;
   padding: 10px;
   background-color: #926e4f;
   text-decoration: none;
+  border:none;
+}
+
+.add-to-cart:hover{
+  transform: scale(1.06);
+}
+
+.paypal a:hover{
+  color:black
 }
 
 .paypal {
   padding: 10px 0px;
 }
+
+button.buyNowBtn {
+  background-color: rgba(0, 0, 0, 0.858);
+  color:white;
+  padding-bottom: 25px;
+}
+
 
 @media only screen and (min-width: 751px) and (max-width: 1000px) {
   .item {

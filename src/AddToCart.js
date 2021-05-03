@@ -34,9 +34,7 @@ class AddToCart extends React.Component {
           <h4>Shipping is $4.99</h4>
           <h4>Sales tax is ${tax}</h4>
           <h3>
-            Your total price is ${realPrice}, please send ${realPrice} to the
-            paypal link below.
-          </h3>
+            Total ${realPrice}</h3>
           <div className="paypal">
             <a
               target="_blank"
@@ -63,8 +61,8 @@ class AddToCart extends React.Component {
             placeholder="Enter your address..."
           ></input>
           <input name="item" type="text" value={`${item.name} (Leave this)`}></input>
-          <button name="submit" type="submit">
-            Submit
+          <button name="submit" className="buyNowBtn" type="submit">
+            Buy Now
           </button>
         </form>
       </div>

@@ -81,7 +81,7 @@ class ItemPage extends React.Component {
               key={this.props.id}
               onClick={this.handleAddToCart}
             >
-              Buy Now
+              Add to Cart
             </button>
           </Link>
         </div>
