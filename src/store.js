@@ -98,7 +98,7 @@ export default {
     },
     {
       name: "Emporio Armani brown tortoise sunglasses",
-      category: "Sunlasses",
+      category: "Sunglasses",
       id: "8",
       price: "165",
       size: "One size",
@@ -109,6 +109,20 @@ export default {
       url3: "/img/brownEmpirio3.png",
       description:
         "Emporia brown tortoise round sunglasses with lots of protection. The temples are a brushed gold and brown as picture indicates. Front is large and roundish. High fashion",
+    },
+    {
+      name: "Kate Spade brown tortoise glasses",
+      category: "Glasses",
+      id: "9",
+      price: "159",
+      size: "50-16",
+      brand: "Kate Spade",
+      url: "/img/kateSpadeTortoise.png",
+      url1: "/img/kateSpadeTortoise1.png",
+      url2: "/img/kateSpadeTortoise2.png",
+      url3: "/img/kateSpadeTortoise3.png",
+      description:
+        "Kate Spade small size/fit tortoise glasses. Super cute and comfortable. Tortoise front with black temple-100% authentic.",
     },
 
   ],
