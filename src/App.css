@@ -114,9 +114,31 @@ form.searchBar:hover .fa {
 
 button:focus { outline: none; }
 
+
 .car-top {
-  width: 100%;
-  padding: 10px 0px 100px 0px;
+  margin-left: 16%;
+  width: 33%;
+}
+
+.openingimg {
+  margin-top: 3%;
+  margin-bottom: 100px;
+}
+
+.open {
+  border: 15px solid white;
+}
+
+.dye-top {
+  width: 25%;
+  margin-bottom: 80px;
+  border-left: 0px;
+}
+
+.shoes {
+  width: 17%;
+  margin-bottom: 100px;
+  border-left: 0px;
 }
 
 .hidden {
@@ -271,8 +293,17 @@ button.buyNowBtn {
     width: 270px;
   }
 
-  .car-top {
-    height: 350px;
+  .shoes{
+    display: none;
+  }
+
+  .car-top{
+    margin-left:20%;
+    width:43%;
+  }
+
+  .dye-top {
+    width: 27%;
   }
 
   #nav-bar {
@@ -303,12 +334,18 @@ button.buyNowBtn {
     font-size: 12px;
   }
 
+  .shoes,
   .car-top {
-    height: 300px;
+    display: none;
+  }
+
+  .dye-top {
+    width: 65%;
+    margin: 40px 0 80px 160px;
   }
 
   #nav-bar {
-    top: 19%;
+    top: 29%;
   }
 
   .tabs {
@@ -320,6 +357,7 @@ button.buyNowBtn {
     font-size: 13px;
     margin-left: 4%;
   }
+  
 }
 
 @media screen and (max-width: 449px) {
@@ -410,6 +448,16 @@ button.buyNowBtn {
     /* top: 18%;
     left: 10%; */
     display:none;
+  }
+
+  .shoes,
+  .car-top {
+    display: none;
+  }
+
+  .dye-top{
+    width:99%;
+    margin:0 auto;
   }
 
 }
