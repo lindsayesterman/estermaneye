@@ -42,20 +42,6 @@ export default {
         "Prada black and gold sunglasses with gold trim on top. Super fashionable and fun shape.",
     },
     {
-      name: "Prada semi rimless glasses",
-      category: "Glasses",
-      id: "4",
-      price: "215",
-      size: "53-19",
-      brand: "Prada",
-      url: "/img/semiRimlessPrada.png",
-      url1: "/img/semiRimlessPrada1.png",
-      url2: "/img/semiRimlessPrada2.png",
-      url3: "/img/semiRimlessPrada3.png",
-      description:
-        "Prada semi rimless frames. The top of the frame is a silver tone color and the temples are a brown tortoise color. Brand new",
-    },
-    {
       name: "Kate Spade blue & gold glasses",
       category: "Glasses",
       id: "5",
@@ -124,7 +110,89 @@ export default {
       description:
         "Kate Spade small size/fit tortoise glasses. Super cute and comfortable. Tortoise front with black temple-100% authentic.",
     },
-
+    {
+      name: "Kate Spade black sunglasses",
+      category: "Sunglasses",
+      id: "10",
+      price: "175",
+      size: "One Size",
+      brand: "Kate Spade",
+      url: "/img/pinkCase.png",
+      url1: "/img/pinkCase1.png",
+      url2: "/img/pinkCase2.png",
+      url3: "/img/pinkCase3.png",
+      description:
+        "Kate spade new york Hello Sunshine big black sunglasses with black temples and a little beige/taupe on the side. Stylish and fun.",
+    },
+    {
+      name: "Silhouette lavendar/lilac rimless frames",
+      category: "Glasses",
+      id: "11",
+      price: "175",
+      size: "49 17 135",
+      brand: "Silhouette",
+      url: "/img/purpleSilhouette.png",
+      url1: "/img/purpleSilhouette1.png",
+      url2: "/img/purpleSilhouette2.png",
+      description:
+        "Beautiful lightweight lilac colored titanium rimless glasses. Super comfortable and easy to wear.",
+    },
+    {
+      name: "Coach brown tortoise sunglasses",
+      category: "Sunglasses",
+      id: "12",
+      price: "175",
+      size: "One size",
+      brand: "Coach",
+      url: "/img/coachBrown.png",
+      url1: "/img/coachBrown1.png",
+      url2: "/img/coachBrown2.png",
+      url3: "/img/coachBrown3.png",
+      description:
+        "Big brown tortoise sunglasses with full coverage. 100% authentic and UV protection. Stylish and fun. Great logo on the side. Coach case not included… but will provide a sunglass case.",
+    },
+    {
+      name: "Michael Kors gunmetal silver frames",
+      category: "Glasses",
+      id: "13",
+      price: "155",
+      size: "54",
+      brand: "Michael Kors",
+      url: "/img/mkSilverFrame.png",
+      url1: "/img/mkSilverFrame1.png",
+      url2: "/img/mkSilverFrame2.png",
+      url3: "/img/mkSilverFrame3.png",
+      description:
+        "Michael Kors full frame in gunmetal silver color with MIchael Kors logo on temples. Temples have some brown tortoise near ear piece- picture enclosed. Eye size 54. Progressive will fit into these, if need be.",
+    },
+    {
+      name: "Rag & Bone sunglasses",
+      category: "Sunglasses",
+      id: "14",
+      price: "195",
+      size: "56-19-145",
+      brand: "Rag & Bone",
+      url: "/img/rag&Bone.png",
+      url1: "/img/rag&Bone1.png",
+      url2: "/img/rag&Bone2.png",
+      url3: "/img/rag&Bone3.png",
+      description:
+        "Rag & bone white marbled large flash mirror lens. Super fun, trendy and comfortable. Perfect for summer. Great sun protection",
+    },
+    {
+      name: "Silhouette blue rimless frames",
+      category: "Glasses",
+      id: "15",
+      price: "175",
+      size: "53 17 135",
+      brand: "Silhouette",
+      url: "/img/blueSilhouette.png",
+      url1: "/img/blueSilhouette1.png",
+      url2: "/img/blueSilhouette2.png",
+      url3: "/img/blueSilhouette3.png",
+      description:
+        "Beautiful teal colored silhouette rimless glasses. Light and comfortable on your face. Fashionable and fun",
+    },
   ],
   navs: [
     {
@@ -132,6 +200,6 @@ export default {
     },
     {
       name: "Glasses",
-    }
+    },
   ],
 };
