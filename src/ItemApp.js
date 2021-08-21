@@ -9,7 +9,7 @@ import LandingPage from "./LandingPage.js";
 import AddToCart from "./AddToCart";
 import HeaderNav from "./HeaderNav";
 import { getItemsForSearch } from "./Item-helpers.js";
-
+import mG from "./whiteOutlineMG.png";
 const { navs, items } = store;
 
 class ItemApp extends Component {
@@ -62,6 +62,7 @@ class ItemApp extends Component {
               return (
                 <>
                   <HeaderNav />
+
                   <form
                     className="searchBar"
                     onSubmit={(e) => this.handleSearch(e)}
@@ -71,15 +72,17 @@ class ItemApp extends Component {
                       id="searched"
                       onChange={(e) => this.updateSearchHandle(e)}
                     />
-                    <button className="fa fa-search"></button>
+                    <button className="fa fa-search">
+                      <img with="20px" height="20px" src={mG}></img>
+                    </button>
                   </form>
-                    <NavList {...routeProps} navs={navs} />
+                  <NavList {...routeProps} navs={navs} />
                   <LandingPage />
                   <div id="item-list">
-                  <ItemList
-                    {...routeProps}
-                    items={ItemsForNav || this.state.sortedResults}
-                  />
+                    <ItemList
+                      {...routeProps}
+                      items={ItemsForNav || this.state.sortedResults}
+                    />
                   </div>
                 </>
               );
