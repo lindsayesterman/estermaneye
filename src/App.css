@@ -44,12 +44,10 @@ li {
   padding: 1% 0px 0px 5%;
   display: inline-block;
   font-weight: 300;
-  /* padding: 3% 3% 3% 7%; */
 }
 
 .estermaneye h1:hover {
-  /* text-decoration: underline; */
-  transform: scale(1.03);
+  text-decoration: underline;
 }
 
 form.searchBar {
